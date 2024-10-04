@@ -13,7 +13,7 @@ from pyspark.sql.functions import *
 columns = ["language","users_count"]
 data = [("Java", "20000"), ("Python", "100000"), ("Scala", "3000")]
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 rdd = spark.sparkContext.parallelize(data)
 
 dfFromRDD1 = rdd.toDF()

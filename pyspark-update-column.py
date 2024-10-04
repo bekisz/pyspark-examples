@@ -5,7 +5,7 @@ author SparkByExamples.com
 
 from pyspark.sql import SparkSession
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 data = [('James','Smith','M',3000),('Anna','Rose','F',4100),
   ('Robert','Williams','NA',6200),(None,'Rob','F',6200)

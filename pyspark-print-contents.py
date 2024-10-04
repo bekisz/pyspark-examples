@@ -6,7 +6,7 @@ author SparkByExamples.com
 
 from pyspark.sql import SparkSession
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 dept = [("Finance",10), \
     ("Marketing",20), \

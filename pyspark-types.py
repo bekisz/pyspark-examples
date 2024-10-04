@@ -8,7 +8,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.types import DataType
 from pyspark.sql.types import StructType, StructField, StringType, ArrayType, IntegerType
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 from pyspark.sql.types import ArrayType,IntegerType
 arrayType = ArrayType(IntegerType(),False)

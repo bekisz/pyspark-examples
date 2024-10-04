@@ -9,7 +9,7 @@ import pyspark
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, asc,desc
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 simpleData = [("James","Sales","NY",90000,34,10000), \
     ("Michael","Sales","NY",86000,56,20000), \

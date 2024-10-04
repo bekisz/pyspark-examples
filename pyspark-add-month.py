@@ -3,7 +3,7 @@
 author SparkByExamples.com
 """
 from pyspark.sql import SparkSession
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 from pyspark.sql.functions import col,expr
 data=[("2019-01-23",1),("2019-06-24",2),("2019-09-20",3)]

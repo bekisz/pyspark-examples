@@ -11,7 +11,7 @@ from pyspark.sql.types import StructType,StructField, StringType, IntegerType
 from pyspark.sql.functions import *
 
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 
 dataDF = [(('James','','Smith'),'1991-04-01','M',3000),

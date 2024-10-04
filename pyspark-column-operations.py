@@ -3,7 +3,7 @@
 author SparkByExamples.com
 """
 from pyspark.sql import SparkSession,Row
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 data=[("James",23),("Ann",40)]
 df=spark.createDataFrame(data).toDF("name.fname","gender")

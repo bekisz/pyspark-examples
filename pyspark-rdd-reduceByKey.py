@@ -4,7 +4,7 @@ author SparkByExamples.com
 """
 
 from pyspark.sql import SparkSession
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 data = [('Project', 1),
 ('Gutenberg’s', 1),

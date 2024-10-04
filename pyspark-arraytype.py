@@ -6,7 +6,7 @@ author SparkByExamples.com
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StringType, ArrayType,StructType,StructField
 spark = SparkSession.builder \
-                    .appName('SparkByExamples.com') \
+                     \
                     .getOrCreate()
 
 

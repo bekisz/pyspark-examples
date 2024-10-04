@@ -6,7 +6,7 @@ author SparkByExamples.com
 import pyspark
 from pyspark.sql import SparkSession
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 simpleData = (("James", "Sales", 3000), \
     ("Michael", "Sales", 4600),  \

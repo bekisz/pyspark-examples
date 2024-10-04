@@ -11,7 +11,7 @@ from pyspark.sql.functions import col
 from pyspark.sql.functions import to_timestamp
 from pyspark.sql.types import StructType, StructField, StringType, IntegerType,DateType
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 schema = StructType([
             StructField("city", StringType(), True),

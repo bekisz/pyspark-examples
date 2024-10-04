@@ -6,7 +6,7 @@ author SparkByExamples.com
 import pyspark
 from pyspark.sql import SparkSession
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 simpleData = [("James",34),("Ann",34),
     ("Michael",33),("Scott",53),

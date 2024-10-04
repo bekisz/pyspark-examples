@@ -5,7 +5,7 @@ author SparkByExamples.com
 
 from pyspark.sql import SparkSession
 spark = SparkSession.builder \
-                    .appName('SparkByExamples.com') \
+                     \
                     .getOrCreate()
 
 data = [('James','Smith','M',30),

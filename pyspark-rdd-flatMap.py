@@ -5,7 +5,7 @@ author SparkByExamples.com
 
 
 from pyspark.sql import SparkSession
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 data = ["Project Gutenberg’s",
         "Alice’s Adventures in Wonderland",

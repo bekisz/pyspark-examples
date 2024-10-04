@@ -6,7 +6,7 @@ author SparkByExamples.com
 import pyspark
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import expr
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 data = [("James", "Sales", 3000), \
     ("Michael", "Sales", 4600), \

@@ -7,7 +7,7 @@ from pyspark.sql import SparkSession
 
 # Create SparkSession
 spark = SparkSession.builder \
-          .appName('SparkByExamples.com') \
+           \
           .getOrCreate()
 data = [("1","2019-07-01"),("2","2019-06-24"),("3","2019-08-24")]
 

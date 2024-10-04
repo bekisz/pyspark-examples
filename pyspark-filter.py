@@ -10,7 +10,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType,StructField, StringType, IntegerType, ArrayType
 from pyspark.sql.functions import col,array_contains
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 arrayStructureData = [
         (("James","","Smith"),["Java","Scala","C++"],"OH","M"),

@@ -8,7 +8,7 @@ Created on Sat Jun 13 21:08:30 2020
 import pyspark
 from pyspark.sql import SparkSession
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 data = [("James","Smith","USA","CA"),
     ("Michael","Rose","USA","NY"),

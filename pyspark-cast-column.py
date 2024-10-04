@@ -8,7 +8,7 @@ Created on Sat Jun 13 21:08:30 2020
 import pyspark
 from pyspark.sql import SparkSession
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 simpleData = [("James",34,"2006-01-01","true","M",3000.60),
     ("Michael",33,"1980-01-10","true","F",3300.80),

@@ -17,7 +17,7 @@ p2=Person("Alice", 35)
 print(p1.name +","+p2.name)
 
 #PySpark Example
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 rdd2 = spark.sparkContext.parallelize([],10)
 

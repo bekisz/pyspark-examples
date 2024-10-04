@@ -7,7 +7,7 @@ import pyspark
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 simpleData = (("James","","Smith","36636","NewYork",3100), \
     ("Michael","Rose","","40288","California",4300), \
     ("Robert","","Williams","42114","Florida",1400), \

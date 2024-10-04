@@ -7,7 +7,7 @@ from pyspark.sql import SparkSession
 
 # Create SparkSession
 spark = SparkSession.builder \
-               .appName('SparkByExamples.com') \
+                \
                .getOrCreate()
 data=[["1"]]
 df=spark.createDataFrame(data,["id"])

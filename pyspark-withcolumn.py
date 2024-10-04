@@ -7,7 +7,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, lit
 from pyspark.sql.types import StructType, StructField, StringType,IntegerType
 
-spark = SparkSession.builder.appName('SparkByExamples.com').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 data = [('James','','Smith','1991-04-01','M',3000),
   ('Michael','Rose','','2000-05-19','M',4000),

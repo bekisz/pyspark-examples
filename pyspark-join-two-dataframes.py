@@ -7,7 +7,7 @@ from pyspark.sql import SparkSession
 
 # Create SparkSession
 spark = SparkSession.builder \
-          .appName('SparkByExamples.com') \
+           \
           .getOrCreate()
 #EMP DataFrame
 empData = [(1,"Smith",10), (2,"Rose",20),
