@@ -4,10 +4,7 @@ author SparkByExamples.com
 """
 from pyspark.sql import SparkSession
 
-spark: SparkSession = SparkSession.builder \
-    .master("local[1]") \
-    .appName("SparkByExamples.com") \
-    .getOrCreate()
+spark: SparkSession = SparkSession.builder.getOrCreate()
 
 filePath="resources/small_zipcode.csv"
 df = spark.read.options(header='true', inferSchema='true') \

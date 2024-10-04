@@ -7,7 +7,7 @@ Created on Thu Oct 24 22:42:50 2019
 
 import pyspark
 from pyspark.sql import SparkSession
-spark = SparkSession.builder.appName('pyspark-by-examples').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 arrayData = [
         ('James',['Java','Scala'],{'hair':'black','eye':'brown'}),

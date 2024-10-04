@@ -11,9 +11,7 @@ author SparkByExamples.com
 from pyspark.sql import SparkSession
 
 # Create SparkSession
-spark = SparkSession.builder \
-                \
-               .getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 from pyspark.sql.functions import *
 

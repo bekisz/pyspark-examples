@@ -10,7 +10,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.functions import explode, flatten
 
 
-spark = SparkSession.builder.appName('pyspark-by-examples').getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 arrayArrayData = [
   ("James",[["Java","Scala","C++"],["Spark","Java"]]),

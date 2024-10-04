@@ -6,9 +6,7 @@ author SparkByExamples.com
 from pyspark.sql import SparkSession
 
 # Create SparkSession
-spark = SparkSession.builder \
-           \
-          .getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 data = [("1","2019-07-01"),("2","2019-06-24"),("3","2019-08-24")]
 
 df=spark.createDataFrame(data=data,schema=["id","date"])

@@ -5,9 +5,7 @@ author SparkByExamples.com
 
 from pyspark.sql import SparkSession
 # Create SparkSession
-spark = SparkSession.builder \
-                \
-               .getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 data=[["1","2020-02-01"],["2","2019-03-01"],["3","2021-03-01"]]
 df=spark.createDataFrame(data,["id","input"])
 df.show()

@@ -6,9 +6,7 @@ author SparkByExamples.com
 from pyspark.sql import SparkSession
 
 # Create SparkSession
-spark = SparkSession.builder \
-           \
-          .getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 
 dates = [("1","2019-07-01 12:01:19.111"),

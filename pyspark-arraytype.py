@@ -5,9 +5,7 @@ author SparkByExamples.com
 
 from pyspark.sql import SparkSession
 from pyspark.sql.types import StringType, ArrayType,StructType,StructField
-spark = SparkSession.builder \
-                     \
-                    .getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 
 arrayCol = ArrayType(StringType(),False)

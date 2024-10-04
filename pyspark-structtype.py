@@ -8,9 +8,7 @@ from pyspark.sql import SparkSession
 from pyspark.sql.types import StructType,StructField, StringType, IntegerType,ArrayType,MapType
 from pyspark.sql.functions import col,struct,when
 
-spark = SparkSession.builder.master("local[1]") \
-                     \
-                    .getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 data = [("James","","Smith","36636","M",3000),
     ("Michael","Rose","","40288","M",4000),

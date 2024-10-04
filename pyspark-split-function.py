@@ -6,7 +6,7 @@ author SparkByExamples.com
 import pyspark
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import split, col
-spark=SparkSession.builder.appName("sparkbyexamples").getOrCreate()
+spark=SparkSession.builder.getOrCreate()
 
 data=data = [('James','','Smith','1991-04-01'),
   ('Michael','Rose','','2000-05-19'),

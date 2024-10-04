@@ -4,10 +4,7 @@ author SparkByExamples.com
 """
 
 from pyspark.sql import SparkSession
-spark = SparkSession.builder \
-    .master("local[1]") \
-    .appName("SparkByExamples.com") \
-    .getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 df=spark.range(100)
 

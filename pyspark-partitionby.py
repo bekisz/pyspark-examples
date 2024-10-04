@@ -6,9 +6,7 @@ author SparkByExamples.com
 from pyspark.sql import SparkSession
 
 # Create SparkSession
-spark = SparkSession.builder \
-           \
-          .getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 df=spark.read.option("header",True) \
         .csv("C:/apps/sparkbyexamples/src/pyspark-examples/resources/simple-zipcodes.csv")

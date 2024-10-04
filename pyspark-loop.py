@@ -4,9 +4,7 @@ author SparkByExamples.com
 """
 
 from pyspark.sql import SparkSession
-spark = SparkSession.builder \
-                     \
-                    .getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 data = [('James','Smith','M',30),
   ('Anna','Rose','F',41),

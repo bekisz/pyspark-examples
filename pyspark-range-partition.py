@@ -6,9 +6,7 @@ author SparkByExamples.com
 from pyspark.sql import SparkSession
 
 # Create SparkSession
-spark = SparkSession.builder \
-           \
-          .getOrCreate()
+spark = SparkSession.builder.getOrCreate()
           
 
 data = [(1,10),(2,20),(3,10),(4,20),(5,10),

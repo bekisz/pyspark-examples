@@ -6,9 +6,7 @@ author SparkByExamples.com
 from pyspark.sql import SparkSession
 from pyspark.sql.types import DoubleType, IntegerType
 # Create SparkSession
-spark = SparkSession.builder \
-           \
-          .getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 simpleData = [("James","34","true","M","3000.6089"),
     ("Michael","33","true","F","3300.8067"),

@@ -6,9 +6,7 @@ author SparkByExamples.com
 from pyspark.sql import SparkSession
 
 # Create SparkSession
-spark = SparkSession.builder \
-           \
-          .getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 #EMP DataFrame
 empData = [(1,"Smith",10), (2,"Rose",20),
     (3,"Williams",10), (4,"Jones",30)

@@ -6,8 +6,6 @@ author SparkByExamples.com
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
 spark: SparkSession = SparkSession.builder \
-    .master("local[1]") \
-    .appName("SparkByExamples.com") \
     .getOrCreate()
 
 data = [

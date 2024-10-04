@@ -6,9 +6,7 @@ author SparkByExamples.com
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col,sum,avg,max
 
-spark = SparkSession.builder \
-                     \
-                    .getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 simpleData = [("James","Sales","NY",90000,34,10000),
     ("Michael","Sales","NV",86000,56,20000),

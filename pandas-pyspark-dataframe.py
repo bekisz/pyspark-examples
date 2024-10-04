@@ -15,8 +15,6 @@ print(pandasDF)
 from pyspark.sql import SparkSession
 
 spark = SparkSession.builder \
-    .master("local[1]") \
-    .appName("SparkByExamples.com") \
     .getOrCreate()
 
 sparkDF=spark.createDataFrame(pandasDF) 

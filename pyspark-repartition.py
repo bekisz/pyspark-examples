@@ -5,8 +5,7 @@ author SparkByExamples.com
 
 import pyspark
 from pyspark.sql import SparkSession
-spark = SparkSession.builder \
-        .master("local[5]").getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 df = spark.range(0,20)
 print(df.rdd.getNumPartitions())

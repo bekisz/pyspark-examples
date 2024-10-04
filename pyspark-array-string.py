@@ -5,9 +5,7 @@ author SparkByExamples.com
 
 import pyspark
 from pyspark.sql import SparkSession
-spark = SparkSession.builder.master("local[1]") \
-                     \
-                    .getOrCreate()
+spark = SparkSession.builder.getOrCreate()
 
 columns = ["name","languagesAtSchool","currentState"]
 data = [("James,,Smith",["Java","Scala","C++"],"CA"), \
